@@ -2,7 +2,7 @@
 # Coded by BashSTuff 
 # Ver1.0
 ##################################################################################
-###                         Remember PWD		                               ###
+###                         Remember PWD		                       ###
 ##################################################################################
 # 
 # Script puts PWD into a file and sets it when starting another bash session as that user   
