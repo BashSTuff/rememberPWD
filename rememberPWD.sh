@@ -16,11 +16,9 @@ if [ ! -f ~/.bashrc ]; then # edit location of bashRC file if located somewhere 
 
 elif [ -f ~/.bashrc ]; then
 	echo "Making backup for BASHRC file..."
-	mv -v ~/.bashrc ~/.bashrc-BACKUP
-	echo -e '\n\n' >> ~/.bashrc-BACKUP
-	echo -e "# save PWD to disk\nfunction cd {\n    builtin cd \"\$@\"\n    echo \$PWD > ~/.previousPWD\n}\ncd \"\`cat ~/.previousPWD\`\"" >> ~/.bashrc-BACKUP # setting up function here
-	echo "setting new BASHRC file"
-	cp -v ~/.bashrc-BACKUP ~/.bashrc
+	cp -v ~/.bashrc ~/.bashrc-BACKUP
+	echo -e '\n\n' >> ~/.bashrc
+	echo -e "# save PWD to disk\nfunction cd {\n    builtin cd \"\$@\"\n    echo \$PWD > ~/.previousPWD\n}\ncd \"\`cat ~/.previousPWD\`\"" >> ~/.bashrc # setting up function here
 	echo "DONE!"
 
 else
