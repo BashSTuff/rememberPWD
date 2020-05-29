@@ -25,5 +25,3 @@ function cd {<br>
     &emsp;echo $PWD > ~/.previousPWD<br>
 }<br>
 cd "\`cat ~/.previousPWD\`"<br>
-
-![Tester](https://github.com/BashSTuff/rememberPWD/blob/master/imagines/Peek%202020-05-28%2020-56.gif)
