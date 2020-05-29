@@ -26,3 +26,4 @@ function cd {<br>
 }<br>
 cd "\`cat ~/.previousPWD\`"<br>
 
+![Tester](imagines/Peek 2020-05-28 20-56.gif)
